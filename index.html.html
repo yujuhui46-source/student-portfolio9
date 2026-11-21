@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>유주희 | 가톨릭대학교 회계학과 · 교육행정직 포트폴리오</title>
+  <style>
+    :root {
+      --bg-cream: #F9F6F0;
+      --bg-card: #FFFDF9;
+      --bg-sub: #F0EBE0;
+      --green-deep: #1E3F2B;
+      --green-mid: #2F5D42;
+      --green-soft: #4F7D63;
+      --green-tint: #E5EFE8;
+      --accent-amber: #C98A3E;
+      --text-main: #1F2622;
+      --text-muted: #525E57;
+      --border-color: #DCD5C7;
+      --shadow-sm: 0 4px 14px rgba(30, 63, 43, 0.06);
+      --shadow-md: 0 12px 30px rgba(30, 63, 43, 0.11);
+      --radius-lg: 20px;
+      --radius-md: 12px;
+      --max-w: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      line-height: 1.65;
+      overflow-x: hidden;
+      word-break: keep-all;
+    }
+
+    /* 가상 이력 고지 배너 */
+    .notice-bar {
+      background-color: var(--green-deep);
+      color: #F4F1EA;
+      font-size: 0.84rem;
+      text-align: center;
+      padding: 8px 16px;
+      letter-spacing: -0.01em;
+    }
+
+    /* 헤더 & 내비게이션 */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(249, 246, 240, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-wrap {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--green-deep);
+      font-weight: 800;
+      font-size: 1.15rem;
+    }
+
+    .brand-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background-color: var(--green-deep);
+      display: inline-block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 6px 4px;
+      position: relative;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--green-deep);
+    }
+
+    .nav-links a.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -2px;
+      height: 2px;
+      background-color: var(--green-deep);
+      border-radius: 2px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .motion-toggle-btn {
+      background-color: var(--bg-card);
+      color: var(--green-deep);
+      border: 1px solid var(--green-deep);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .motion-toggle-btn:hover {
+      background-color: var(--green-deep);
+      color: var(--bg-cream);
+    }
+
+    .motion-toggle-btn[aria-pressed="true"] {
+      background-color: var(--bg-sub);
+      border-color: var(--text-muted);
+      color: var(--text-muted);
+    }
+
+    .menu-btn {
+      display: none;
+      background: none;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 1.1rem;
+      color: var(--green-deep);
+      cursor: pointer;
+    }
+
+    /* 공통 컨테이너 & 섹션 */
+    main {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    section {
+      padding: 68px 0 20px;
+      scroll-margin-top: 76px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      background-color: var(--green-tint);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--green-deep);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      margin-bottom: 32px;
+    }
+
+    /* 소개(Hero) 영역 */
+    .hero-section {
+      padding-top: 48px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .badge {
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background-color: var(--green-tint);
+      color: var(--green-deep);
+    }
+
+    .badge.outline {
+      background-color: transparent;
+      border: 1px solid var(--green-mid);
+      color: var(--green-mid);
+    }
+
+    .hero-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      line-height: 1.28;
+      color: var(--green-deep);
+      margin-bottom: 16px;
+      letter-spacing: -0.025em;
+    }
+
+    .hero-title span {
+      color: var(--green-mid);
+      text-decoration: underline;
+      text-decoration-color: rgba(79, 125, 99, 0.35);
+      text-underline-offset: 6px;
+    }
+
+    .hero-summary {
+      color: var(--text-muted);
+      font-size: 1.02rem;
+      margin-bottom: 24px;
+    }
+
+    .hero-meta-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 16px;
+      background-color: var(--bg-cream);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      margin-bottom: 26px;
+      font-size: 0.9rem;
+    }
+
+    .hero-meta-list li strong {
+      color: var(--green-deep);
+      display: inline-block;
+      margin-right: 6px;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      position: relative;
+      z-index: 3;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: transform 0.15s ease, background-color 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: var(--green-deep);
+      color: #FFFDF9;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--green-mid);
+    }
+
+    .btn-secondary {
+      background-color: var(--bg-cream);
+      color: var(--green-deep);
+      border-color: var(--green-deep);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--green-tint);
+    }
+
+    /* 데이터 작업실 일러스트 래퍼 (.scene-motion) */
+    .hero-visual-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      padding: 8px;
+    }
+
+    .scene-motion {
+      width: 100%;
+      max-width: 410px;
+      will-change: transform;
+      transform-style: preserve-3d;
+      user-select: none;
+    }
+
+    .scene-motion svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      overflow: visible;
+    }
+
+    .scene-caption {
+      margin-top: 12px;
+      background-color: var(--bg-cream);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 12px 16px;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      text-align: left;
+      width: 100%;
+      max-width: 410px;
+    }
+
+    .scene-caption strong {
+      color: var(--green-deep);
+      display: block;
+      margin-bottom: 3px;
+      font-size: 0.86rem;
+    }
+
+    /* 프로젝트 카드 */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .project-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      border-color: var(--green-mid);
+      box-shadow: var(--shadow-md);
+    }
+
+    .project-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--green-mid);
+      background-color: var(--green-tint);
+      padding: 4px 10px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .project-card h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--green-deep);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .project-card p {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    .project-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .tool-chip {
+      font-size: 0.78rem;
+      background-color: var(--bg-sub);
+      color: var(--text-main);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .detail-btn {
+      width: 100%;
+      padding: 11px 16px;
+      background-color: var(--green-deep);
+      color: #FFFDF9;
+      border: none;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .detail-btn:hover {
+      background-color: var(--green-mid);
+    }
+
+    /* 역량 섹션 */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .skill-box {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .skill-box h3 {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: var(--green-deep);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .skill-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .skill-list li {
+      font-size: 0.92rem;
+      color: var(--text-main);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .skill-level {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--green-deep);
+      background-color: var(--green-tint);
+      padding: 2px 9px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    /* 활동 기록 섹션 */
+    .activity-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .activity-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .activity-card h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--green-deep);
+      margin-bottom: 18px;
+    }
+
+    .timeline {
+      list-style: none;
+      border-left: 2px solid var(--green-soft);
+      padding-left: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .timeline li {
+      position: relative;
+    }
+
+    .timeline li::before {
+      content: "";
+      position: absolute;
+      left: -24px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--green-deep);
+      border: 2px solid var(--bg-card);
+    }
+
+    .timeline-date {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--green-mid);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .timeline-title {
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .timeline-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .intern-note {
+      margin-top: 16px;
+      padding: 12px 14px;
+      background-color: var(--bg-cream);
+      border-radius: 10px;
+      border: 1px dashed var(--green-soft);
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    /* 연락처 섹션 */
+    .contact-card {
+      background-color: var(--green-deep);
+      color: #F9F6F0;
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .contact-info h2 {
+      font-size: 1.7rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .contact-info p {
+      color: #DCE5DF;
+      font-size: 0.96rem;
+      max-width: 540px;
+    }
+
+    .contact-box {
+      background-color: rgba(255, 253, 249, 0.1);
+      border: 1px solid rgba(255, 253, 249, 0.24);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-width: 280px;
+    }
+
+    .email-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .copy-btn {
+      background-color: var(--bg-cream);
+      color: var(--green-deep);
+      border: none;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .copy-btn:hover {
+      background-color: var(--green-tint);
+    }
+
+    .copy-feedback {
+      font-size: 0.8rem;
+      color: #B7E4C7;
+      min-height: 1.2em;
+    }
+
+    /* 푸터 */
+    footer {
+      text-align: center;
+      padding: 28px 16px 40px;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    /* 프로젝트 상세 보기 모달 */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 36, 26, 0.58);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 200;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-dialog {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      max-width: 620px;
+      width: 100%;
+      max-height: 88vh;
+      overflow-y: auto;
+      padding: 32px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: var(--bg-sub);
+      border: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--green-deep);
+      cursor: pointer;
+    }
+
+    .modal-badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--green-mid);
+      background-color: var(--green-tint);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .modal-title {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--green-deep);
+      margin-bottom: 14px;
+      padding-right: 32px;
+    }
+
+    .modal-section {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .modal-section h4 {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--green-deep);
+      margin-bottom: 6px;
+    }
+
+    .modal-section p,
+    .modal-section ul {
+      font-size: 0.92rem;
+      color: var(--text-main);
+    }
+
+    .modal-section ul {
+      padding-left: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    /* 반응형 (태블릿 & 모바일) */
+    @media (max-width: 920px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        padding: 30px 22px;
+        gap: 28px;
+      }
+
+      /* 모바일에서는 글 아래에 그림 배치 */
+      .hero-content {
+        order: 1;
+      }
+
+      .hero-visual-area {
+        order: 2;
+        padding: 4px 0;
+      }
+
+      .projects-grid,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .activity-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .menu-btn {
+        display: inline-block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--bg-card);
+        border-bottom: 1px solid var(--border-color);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 24px 20px;
+        gap: 12px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hero-title {
+        font-size: 1.75rem;
+      }
+
+      .hero-meta-list {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        padding: 28px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice-bar" role="note">
+    ※ 안내: 본 페이지에 기재된 모든 학력·수상·프로젝트·활동 이력은 포트폴리오 예시를 위해 구성된 가상 데이터입니다.
+  </div>
+
+  <header>
+    <div class="nav-wrap">
+      <a href="#about" class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>유주희 · 교육행정 포트폴리오</span>
+      </a>
+
+      <nav aria-label="주요 메뉴">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="active">소개</a></li>
+          <li><a href="#projects">프로젝트</a></li>
+          <li><a href="#skills">역량</a></li>
+          <li><a href="#activities">활동 기록</a></li>
+          <li><a href="#contact">연락처</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="motion-toggle-btn" id="motionToggleBtn" aria-pressed="false" title="작업실 일러스트 움직임 켜기/끄기">
+          <span id="motionStatusIcon" aria-hidden="true">⏸</span>
+          <span id="motionStatusText">모션 일시정지</span>
+        </button>
+        <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="메뉴 열기">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. 소개 섹션 -->
+    <section id="about" class="hero-section">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badges">
+            <span class="badge">가상 이력 포트폴리오</span>
+            <span class="badge outline">가톨릭대학교 회계학과</span>
+            <span class="badge outline">지원 직무 · 교육행정직</span>
+          </div>
+
+          <h1 class="hero-title">
+            숫자의 정확함으로<br />
+            <span>투명한 교육행정</span>을 설계하는<br />
+            지원자 유주희입니다.
+          </h1>
+
+          <p class="hero-summary">
+            회계학 전공에서 익힌 예산 편성·결산 검증 원리와 엑셀·파워포인트 실무 역량을 바탕으로,
+            학교 및 교육기관의 예산 집행 투명성을 높이고 교직원과 학생 모두가 신뢰할 수 있는
+            체계적인 행정 지원 체계를 만들어가고자 합니다.
+          </p>
+
+          <ul class="hero-meta-list">
+            <li><strong>전공</strong>가톨릭대학교 회계학과</li>
+            <li><strong>희망 직무</strong>교육행정직 (예산·회계·학사행정)</li>
+            <li><strong>인턴 경력</strong>없음 (교내·대회 실무 프로젝트 중심)</li>
+            <li><strong>주요 자격</strong>컴퓨터활용능력 2급</li>
+          </ul>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">핵심 프로젝트 3선 보기</a>
+            <a href="#contact" class="btn-secondary">연락처 확인하기</a>
+          </div>
+        </div>
+
+        <!-- 소개 영역 옆 데이터 작업실 일러스트 (.scene-motion) -->
+        <div class="hero-visual-area">
+          <div class="scene-motion" id="sceneMotion">
+            <svg viewBox="0 0 440 380" role="img" aria-labelledby="studioIllustrationTitle studioIllustrationDesc">
+              <title id="studioIllustrationTitle">유주희의 교육행정 데이터 작업실 일러스트</title>
+              <desc id="studioIllustrationDesc">나무 책상 위에 놓인 듀얼 모니터, 둥근 캐릭터, 초록 식물 화분, 따뜻한 크림색 머그컵을 표현한 입체 벡터 그림</desc>
+
+              <defs>
+                <!-- 부드러운 입체 그라데이션 -->
+                <radialGradient id="bgAura" cx="50%" cy="46%" r="48%">
+                  <stop offset="0%" stop-color="#E5EFE8" stop-opacity="0.95" />
+                  <stop offset="70%" stop-color="#F0EBE0" stop-opacity="0.6" />
+                  <stop offset="100%" stop-color="#FFFDF9" stop-opacity="0" />
+                </radialGradient>
+
+                <linearGradient id="deskTopGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#D7A876" />
+                  <stop offset="100%" stop-color="#B9834E" />
+                </linearGradient>
+
+                <linearGradient id="deskEdgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#8C5C32" />
+                  <stop offset="50%" stop-color="#A46E3E" />
+                  <stop offset="100%" stop-color="#7D5029" />
+                </linearGradient>
+
+                <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#244B34" />
+                  <stop offset="100%" stop-color="#173322" />
+                </linearGradient>
+
+                <linearGradient id="charBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#3A6F50" />
+                  <stop offset="100%" stop-color="#214631" />
+                </linearGradient>
+
+                <linearGradient id="potGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#D59B62" />
+                  <stop offset="100%" stop-color="#B2763E" />
+                </linearGradient>
+
+                <filter id="softShadow" x="-15%" y="-15%" width="130%" height="135%">
+                  <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#1E3F2B" flood-opacity="0.14" />
+                </filter>
+
+                <filter id="miniShadow" x="-20%" y="-20%" width="140%" height="145%">
+                  <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#1E3F2B" flood-opacity="0.16" />
+                </filter>
+              </defs>
+
+              <!-- 배경 부드러운 원형 아우라 -->
+              <circle cx="220" cy="185" r="172" fill="url(#bgAura)" />
+              <circle cx="96" cy="84" r="10" fill="#D5E4DA" />
+              <circle cx="352" cy="74" r="14" fill="#EAE2D3" />
+              <circle cx="366" cy="112" r="6" fill="#C5D9CC" />
+
+              <!-- 책상 바닥 그림자 -->
+              <ellipse cx="220" cy="340" rx="176" ry="16" fill="#1E3F2B" opacity="0.12" />
+
+              <!-- 둥근 캐릭터 (책상 뒤 의자에 앉아 데이터를 살피는 모습) -->
+              <g filter="url(#softShadow)">
+                <!-- 상체 (짙은 초록 니트) -->
+                <path d="M168 258 C168 214, 272 214, 272 258 Z" fill="url(#charBodyGrad)" />
+                <!-- 크림색 카라 포인트 -->
+                <path d="M204 223 L220 237 L236 223" fill="none" stroke="#F9F6F0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+                <!-- 뒷머리 -->
+                <circle cx="220" cy="166" r="46" fill="#2A2421" />
+                <ellipse cx="182" cy="186" rx="13" ry="22" fill="#2A2421" />
+                <ellipse cx="258" cy="186" rx="13" ry="22" fill="#2A2421" />
+
+                <!-- 얼굴 -->
+                <circle cx="220" cy="172" r="37" fill="#FDE7D4" />
+
+                <!-- 앞머리 -->
+                <path d="M183 166 C185 134, 255 134, 257 166 C246 153, 232 152, 220 160 C208 152, 194 153, 183 166 Z" fill="#2A2421" />
+
+                <!-- 둥근 안경테 & 눈 -->
+                <circle cx="206" cy="175" r="10" fill="none" stroke="#1E3F2B" stroke-width="2.2" />
+                <circle cx="234" cy="175" r="10" fill="none" stroke="#1E3F2B" stroke-width="2.2" />
+                <line x1="216" y1="175" x2="224" y2="175" stroke="#1E3F2B" stroke-width="2.2" />
+
+                <circle cx="206" cy="175" r="2.7" fill="#1F2622" />
+                <circle cx="234" cy="175" r="2.7" fill="#1F2622" />
+
+                <!-- 볼터치 및 미소 -->
+                <ellipse cx="195" cy="184" rx="4.5" ry="2.6" fill="#F2A999" opacity="0.7" />
+                <ellipse cx="245" cy="184" rx="4.5" ry="2.6" fill="#F2A999" opacity="0.7" />
+                <path d="M214 188 Q220 193 226 188" fill="none" stroke="#8F5648" stroke-width="2.2" stroke-linecap="round" />
+              </g>
+
+              <!-- 듀얼 모니터 (좌측 메인 차트 모니터 + 우측 회계 장부 모니터) -->
+              <!-- 좌측 모니터 -->
+              <g transform="translate(56, 134) rotate(-4)" filter="url(#softShadow)">
+                <!-- 스탠드 -->
+                <rect x="60" y="96" width="16" height="26" rx="3" fill="#B8C2BC" />
+                <ellipse cx="68" cy="122" rx="26" ry="5" fill="#98A69E" />
+                <!-- 베젤 -->
+                <rect x="0" y="0" width="136" height="98" rx="12" fill="#FFFDF9" stroke="#D5CEC0" stroke-width="2" />
+                <!-- 화면 -->
+                <rect x="8" y="8" width="120" height="78" rx="7" fill="url(#screenGrad)" />
+                <!-- 화면 내 막대그래프 & 추세선 -->
+                <rect x="20" y="50" width="12" height="24" rx="3" fill="#7CC49B" />
+                <rect x="38" y="38" width="12" height="36" rx="3" fill="#A8DFBE" />
+                <rect x="56" y="28" width="12" height="46" rx="3" fill="#F2C47E" />
+                <rect x="74" y="20" width="12" height="54" rx="3" fill="#E5EFE8" />
+                <path d="M24 44 L44 33 L62 24 L80 16 L108 22" fill="none" stroke="#F9F6F0" stroke-width="2.2" stroke-linecap="round" />
+                <circle cx="108" cy="22" r="3.5" fill="#F2C47E" />
+                <rect x="96" y="36" width="22" height="5" rx="2.5" fill="#5D9474" />
+                <rect x="96" y="46" width="16" height="5" rx="2.5" fill="#5D9474" />
+              </g>
+
+              <!-- 우측 모니터 -->
+              <g transform="translate(248, 130) rotate(4)" filter="url(#softShadow)">
+                <!-- 스탠드 -->
+                <rect x="60" y="96" width="16" height="26" rx="3" fill="#B8C2BC" />
+                <ellipse cx="68" cy="122" rx="26" ry="5" fill="#98A69E" />
+                <!-- 베젤 -->
+                <rect x="0" y="0" width="136" height="98" rx="12" fill="#FFFDF9" stroke="#D5CEC0" stroke-width="2" />
+                <!-- 화면 -->
+                <rect x="8" y="8" width="120" height="78" rx="7" fill="url(#screenGrad)" />
+                <!-- 화면 내 엑셀 스프레드시트 격자 & 체크 표시 -->
+                <rect x="18" y="18" width="100" height="10" rx="3" fill="#467A5B" />
+                <rect x="18" y="33" width="46" height="8" rx="2" fill="#DCE9E0" opacity="0.85" />
+                <rect x="70" y="33" width="48" height="8" rx="2" fill="#F2C47E" opacity="0.9" />
+                <rect x="18" y="46" width="46" height="8" rx="2" fill="#DCE9E0" opacity="0.65" />
+                <rect x="70" y="46" width="48" height="8" rx="2" fill="#9FD3B4" opacity="0.85" />
+                <rect x="18" y="59" width="46" height="8" rx="2" fill="#DCE9E0" opacity="0.65" />
+                <rect x="70" y="59" width="48" height="8" rx="2" fill="#DCE9E0" opacity="0.85" />
+              </g>
+
+              <!-- 나무 책상 -->
+              <g filter="url(#softShadow)">
+                <!-- 책상 다리 -->
+                <rect x="64" y="274" width="18" height="62" rx="6" fill="#7D5029" />
+                <rect x="358" y="274" width="18" height="62" rx="6" fill="#7D5029" />
+                <!-- 책상 상판 앞면 두께 -->
+                <rect x="34" y="264" width="372" height="16" rx="7" fill="url(#deskEdgeGrad)" />
+                <!-- 책상 상판 윗면 -->
+                <rect x="30" y="250" width="380" height="18" rx="8" fill="url(#deskTopGrad)" />
+                <!-- 나뭇결 디테일 -->
+                <line x1="78" y1="258" x2="152" y2="258" stroke="#A67241" stroke-width="1.8" stroke-linecap="round" opacity="0.55" />
+                <line x1="254" y1="261" x2="342" y2="261" stroke="#A67241" stroke-width="1.8" stroke-linecap="round" opacity="0.55" />
+              </g>
+
+              <!-- 책상 위 중앙 키보드 & 메모패드 -->
+              <g filter="url(#miniShadow)">
+                <rect x="166" y="244" width="108" height="10" rx="4" fill="#FFFDF9" stroke="#CFC7B8" stroke-width="1.5" />
+                <line x1="176" y1="249" x2="264" y2="249" stroke="#8FA397" stroke-width="2" stroke-dasharray="6 4" />
+              </g>
+
+              <!-- 책상 왼쪽 초록 식물 화분 -->
+              <g transform="translate(56, 192)" filter="url(#miniShadow)">
+                <!-- 잎사귀 -->
+                <path d="M26 42 C10 34, 6 16, 22 10 C28 20, 28 32, 26 42 Z" fill="#2F5D42" />
+                <path d="M28 42 C44 32, 50 14, 34 8 C27 18, 27 32, 28 42 Z" fill="#4F7D63" />
+                <path d="M27 40 C22 24, 24 6, 28 2 C33 8, 33 24, 27 40 Z" fill="#689B7E" />
+                <!-- 화분 -->
+                <polygon points="10,40 44,40 39,64 15,64" fill="url(#potGrad)" />
+                <rect x="7" y="36" width="40" height="7" rx="3.5" fill="#E0AA72" />
+              </g>
+
+              <!-- 책상 오른쪽 따뜻한 크림색 머그컵 -->
+              <g transform="translate(332, 212)" filter="url(#miniShadow)">
+                <!-- 은은한 김 -->
+                <path d="M14 6 Q11 0 15 -5" fill="none" stroke="#9BB3A5" stroke-width="2" stroke-linecap="round" opacity="0.75" />
+                <path d="M23 5 Q20 -1 24 -6" fill="none" stroke="#9BB3A5" stroke-width="2" stroke-linecap="round" opacity="0.75" />
+                <!-- 손잡이 -->
+                <path d="M33 18 C43 18, 43 32, 33 32" fill="none" stroke="#EFE9DC" stroke-width="4.5" stroke-linecap="round" />
+                <!-- 컵 몸통 -->
+                <rect x="4" y="12" width="30" height="30" rx="7" fill="#FFFDF9" stroke="#D8D0C1" stroke-width="1.8" />
+                <!-- 짙은 초록 띠 포인트 -->
+                <rect x="4" y="22" width="30" height="6" fill="#2F5D42" />
+              </g>
+            </svg>
+          </div>
+
+          <div class="scene-caption">
+            <strong>일러스트 안내 · 교육행정 데이터 작업실</strong>
+            듀얼 모니터의 예산·회계 분석 차트와 스프레드시트, 집중하는 캐릭터, 그리고 정돈된 나무 책상 위의 식물과 머그컵은
+            정확한 데이터 검증과 차분한 행정 지원 태도를 상징합니다.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 프로젝트 3개 섹션 -->
+    <section id="projects">
+      <span class="section-label">Projects</span>
+      <h2 class="section-title">주요 실무·대회 프로젝트</h2>
+      <p class="section-desc">회계 전공 지식과 엑셀·파워포인트·컴퓨터활용능력 2급 역량을 결합해 수행한 3가지 프로젝트입니다.</p>
+
+      <div class="projects-grid">
+        <!-- 프로젝트 1 -->
+        <article class="project-card">
+          <div>
+            <span class="project-tag">예산·회계 분석 · 엑셀 대회 출품작</span>
+            <h3>대학 단과대학 학생회 예산 집행 투명성 개선 대시보드</h3>
+            <p>
+              수기 영수증과 분산된 엑셀 장부로 관리되던 학기별 예산 내역을 표준 계정과목으로 재분류하고,
+              조건부 서식과 피벗 테이블 기반의 자동 집행률 점검 시트를 구축했습니다.
+            </p>
+            <div class="project-tools">
+              <span class="tool-chip">Microsoft Excel</span>
+              <span class="tool-chip">피벗 테이블</span>
+              <span class="tool-chip">회계원리·원가분류</span>
+            </div>
+          </div>
+          <button type="button" class="detail-btn" data-project="0">상세 보기</button>
+        </article>
+
+        <!-- 프로젝트 2 -->
+        <article class="project-card">
+          <div>
+            <span class="project-tag">행정 보고서 시각화 · 파워포인트 대회</span>
+            <h3>학령인구 변화에 따른 지역 교육재정 배분 효율화 제안서</h3>
+            <p>
+              공공 교육통계 데이터를 수집·정제하여 학교급별 학생 수 추이와 운영비 집행 구조를 분석하고,
+              비전공자도 한눈에 이해할 수 있는 슬라이드 보고서로 시각화했습니다.
+            </p>
+            <div class="project-tools">
+              <span class="tool-chip">PowerPoint</span>
+              <span class="tool-chip">Excel 데이터 정제</span>
+              <span class="tool-chip">교육재정 통계</span>
+            </div>
+          </div>
+          <button type="button" class="detail-btn" data-project="1">상세 보기</button>
+        </article>
+
+        <!-- 프로젝트 3 -->
+        <article class="project-card">
+          <div>
+            <span class="project-tag">전공 캡스톤 · 컴퓨터활용능력 2급 응용</span>
+            <h3>비영리 교육기관 결산서 오류 검증 및 정산 자동화 템플릿</h3>
+            <p>
+              공익법인 및 학교회계 결산 과정에서 빈번한 계정 오기입과 증빙 누락을 예방하기 위해,
+              함수 기반 대차일치 검증표와 지출결의서 체크리스트 양식을 설계했습니다.
+            </p>
+            <div class="project-tools">
+              <span class="tool-chip">컴퓨터활용능력 2급</span>
+              <span class="tool-chip">VLOOKUP·SUMIFS</span>
+              <span class="tool-chip">비영리회계</span>
+            </div>
+          </div>
+          <button type="button" class="detail-btn" data-project="2">상세 보기</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. 역량 섹션 -->
+    <section id="skills">
+      <span class="section-label">Competencies</span>
+      <h2 class="section-title">교육행정 직무 핵심 역량</h2>
+      <p class="section-desc">회계학 전공 기반의 재무·예산 이해도와 문서·데이터 처리 역량을 갖추었습니다.</p>
+
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h3>회계 · 교육재정 이해</h3>
+          <ul class="skill-list">
+            <li>
+              <span>재무회계 및 결산 원리 이해</span>
+              <span class="skill-level">전공 심화</span>
+            </li>
+            <li>
+              <span>예산 편성·집행·정산 프로세스 분석</span>
+              <span class="skill-level">실습 완료</span>
+            </li>
+            <li>
+              <span>증빙 서류 대조 및 계정과목 분류</span>
+              <span class="skill-level">우수</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3>OA · 데이터 처리 실무</h3>
+          <ul class="skill-list">
+            <li>
+              <span>Microsoft Excel (함수·피벗·차트)</span>
+              <span class="skill-level">대회 입상</span>
+            </li>
+            <li>
+              <span>Microsoft PowerPoint (보고서 구조화)</span>
+              <span class="skill-level">대회 입상</span>
+            </li>
+            <li>
+              <span>스프레드시트 및 컴퓨터 일반</span>
+              <span class="skill-level">컴활 2급</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3>행정 소통 · 문서 관리</h3>
+          <ul class="skill-list">
+            <li>
+              <span>공문서·기안문 형식 준수 및 요약</span>
+              <span class="skill-level">우수</span>
+            </li>
+            <li>
+              <span>교내 팀 프로젝트 일정·회의록 관리</span>
+              <span class="skill-level">리더 경험</span>
+            </li>
+            <li>
+              <span>민원·학생 문의 응대용 안내문 제작</span>
+              <span class="skill-level">실무 적용</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 활동 기록 섹션 -->
+    <section id="activities">
+      <span class="section-label">Activities & Awards</span>
+      <h2 class="section-title">학업 · 대회 · 자격 활동 기록</h2>
+      <p class="section-desc">인턴십 대신 교내 회계 전공 활동과 실무 역량 경진대회를 통해 행정 감각을 길렀습니다.</p>
+
+      <div class="activity-wrap">
+        <div class="activity-card">
+          <h3>대회 수상 및 자격 취득</h3>
+          <ul class="timeline">
+            <li>
+              <span class="timeline-date">2026.05 (가상 이력)</span>
+              <div class="timeline-title">교내 데이터·엑셀 실무 경진대회 우수상</div>
+              <p class="timeline-desc">예산 집행 내역 자동 집계 및 오류 검출 시트 설계 부문 입상</p>
+            </li>
+            <li>
+              <span class="timeline-date">2025.11 (가상 이력)</span>
+              <div class="timeline-title">대학생 프레젠테이션(파워포인트) 기획 대회 장려상</div>
+              <p class="timeline-desc">교육재정 통계 시각화 및 정책 제안 슬라이드 구성 발표</p>
+            </li>
+            <li>
+              <span class="timeline-date">2025.08 (가상 이력)</span>
+              <div class="timeline-title">국가기술자격 컴퓨터활용능력 2급 취득</div>
+              <p class="timeline-desc">대한상공회의소 주관 스프레드시트 실무 및 컴퓨터 일반 합격</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="activity-card">
+          <h3>학업 및 교내 행정 보조 활동</h3>
+          <ul class="timeline">
+            <li>
+              <span class="timeline-date">2024.03 ~ 현재 (가상 이력)</span>
+              <div class="timeline-title">가톨릭대학교 회계학과 학부 재학</div>
+              <p class="timeline-desc">중급회계, 원가관리회계, 비영리·정부회계 기초, 세법개론 등 이수</p>
+            </li>
+            <li>
+              <span class="timeline-date">2025.03 ~ 2025.12 (가상 이력)</span>
+              <div class="timeline-title">회계학과 학술 소모임 총무 및 회계 감사</div>
+              <p class="timeline-desc">학기별 운영비 예산안 작성, 영수증 전수 대조 및 결산 보고서 공개</p>
+            </li>
+          </ul>
+          <div class="intern-note">
+            <strong>경력 사항 안내:</strong> 기업 인턴십 경력은 없으며(없음), 교내 예산 관리 활동과 엑셀·파워포인트 대회 프로젝트를 통해 행정 실무 역량을 검증했습니다.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 연락처 섹션 -->
+    <section id="contact">
+      <div class="contact-card">
+        <div class="contact-info">
+          <h2>교육행정직 지원 문의</h2>
+          <p>
+            성실한 기록과 정확한 회계 처리로 교육 현장을 든든하게 뒷받침하겠습니다.<br />
+            포트폴리오 관련 문의나 면접 안내는 아래 이메일로 연락해 주세요.
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <span style="font-size: 0.82rem; color: #DCE5DF;">이메일 주소 (가상 포트폴리오용)</span>
+          <div class="email-row">
+            <span id="emailText">jjuhee0329naver@.com</span>
+            <button type="button" class="copy-btn" id="copyEmailBtn">주소 복사</button>
+          </div>
+          <div class="copy-feedback" id="copyFeedback" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 유주희 (가톨릭대학교 회계학과 · 교육행정직 지원 포트폴리오)</p>
+    <p style="margin-top: 4px;">본 웹페이지는 포트폴리오 시연을 위한 가상 프로필이며, 모든 이력과 이메일(jjuhee0329naver@.com)은 예시입니다.</p>
+  </footer>
+
+  <!-- 프로젝트 상세 보기 모달 -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="modalCloseBtn" aria-label="상세 창 닫기">✕</button>
+      <span class="modal-badge" id="modalBadge">카테고리</span>
+      <h3 class="modal-title" id="modalTitle">프로젝트 제목</h3>
+
+      <div class="modal-section">
+        <h4>기획 배경 및 목표</h4>
+        <p id="modalBackground"></p>
+      </div>
+
+      <div class="modal-section">
+        <h4>주요 수행 내용</h4>
+        <ul id="modalTasks"></ul>
+      </div>
+
+      <div class="modal-section">
+        <h4>성과 및 교육행정직 적용 포인트</h4>
+        <p id="modalOutcome"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      /* ---------------------------------------------------
+       * 1. 프로젝트 상세 데이터 및 모달 제어
+       * --------------------------------------------------- */
+      const projectDetails = [
+        {
+          badge: "예산·회계 분석 · 엑셀 대회 출품작",
+          title: "대학 단과대학 학생회 예산 집행 투명성 개선 대시보드",
+          background:
+            "행사별로 수기 엑셀 파일이 따로 관리되어 잔액 파악이 지연되고 항목 오분류가 발생하던 문제를 해결하기 위해 기획했습니다.",
+          tasks: [
+            "지출 내역을 인건비·행사운영비·홍보비·비품비 등 6개 표준 계정과목으로 재분류",
+            "SUMIFS 및 데이터 유효성 검사를 적용해 예산 초과 입력 시 자동 경고 표시 구현",
+            "피벗 테이블과 슬라이서를 연동하여 월별·사업별 집행률을 한 화면에서 조회하도록 구성"
+          ],
+          outcome:
+            "결산 집계 시간을 기존 대비 약 60% 단축하는 모의 검증 결과를 얻었으며, 학교회계 예산 집행 모니터링 업무에 즉시 응용할 수 있는 기준을 마련했습니다."
+        },
+        {
+          badge: "행정 보고서 시각화 · 파워포인트 대회",
+          title: "학령인구 변화에 따른 지역 교육재정 배분 효율화 제안서",
+          background:
+            "학생 수 감소와 지역별 교육 여건 격차 속에서 교육예산의 합리적 배분 기준을 시각적으로 설득력 있게 전달하고자 제작했습니다.",
+          tasks: [
+            "최근 5개년 교육통계연보 데이터를 엑셀로 정제하여 권역별 학급당 학생 수 및 운영비 비교",
+            "핵심 메시지가 먼저 드러나는 두괄식 슬라이드 구조와 일관된 짙은 초록·크림 컬러 차트 적용",
+            "예산 절감분 재투자 시나리오 3단계를 인포그래픽으로 정리하여 발표"
+          ],
+          outcome:
+            "방대한 행정·재정 수치를 이해관계자가 직관적으로 파악할 수 있도록 구조화하는 문서 기획 역량을 인정받았습니다."
+        },
+        {
+          badge: "전공 캡스톤 · 컴퓨터활용능력 2급 응용",
+          title: "비영리 교육기관 결산서 오류 검증 및 정산 자동화 템플릿",
+          background:
+            "비영리·교육기관 회계 실무에서 자주 발생하는 차변·대변 불일치 및 증빙 누락을 사전 차단하기 위해 설계한 검증 시트입니다.",
+          tasks: [
+            "컴퓨터활용능력 2급에서 익힌 IF, VLOOKUP, ISERROR 함수를 결합해 계정코드 오류 자동 검출",
+            "지출결의서 번호와 영수증 첨부 여부를 대조하는 체크리스트 대시보드 구현",
+            "분기별 결산 요약표가 자동 생성되도록 시트 간 참조 구조 표준화"
+          ],
+          outcome:
+            "정산 마감 시 반복적인 수작업 대조 실수를 줄이고, 감사 대비 증빙 관리 체계를 표준화하는 실무 감각을 길렀습니다."
+        }
+      ];
+
+      const modal = document.getElementById("projectModal");
+      const modalBadge = document.getElementById("modalBadge");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalBackground = document.getElementById("modalBackground");
+      const modalTasks = document.getElementById("modalTasks");
+      const modalOutcome = document.getElementById("modalOutcome");
+      const modalCloseBtn = document.getElementById("modalCloseBtn");
+      let lastFocusedBtn = null;
+
+      function openProjectModal(index, triggerBtn) {
+        const item = projectDetails[index];
+        if (!item) return;
+
+        lastFocusedBtn = triggerBtn || null;
+        modalBadge.textContent = item.badge;
+        modalTitle.textContent = item.title;
+        modalBackground.textContent = item.background;
+        modalOutcome.textContent = item.outcome;
+
+        modalTasks.innerHTML = "";
+        item.tasks.forEach(function (task) {
+          const li = document.createElement("li");
+          li.textContent = task;
+          modalTasks.appendChild(li);
+        });
+
+        modal.classList.add("open");
+        modalCloseBtn.focus();
+      }
+
+      function closeProjectModal() {
+        modal.classList.remove("open");
+        if (lastFocusedBtn) {
+          lastFocusedBtn.focus();
+        }
+      }
+
+      document.querySelectorAll(".detail-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          const idx = Number(btn.getAttribute("data-project"));
+          openProjectModal(idx, btn);
+        });
+      });
+
+      modalCloseBtn.addEventListener("click", closeProjectModal);
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+          closeProjectModal();
+        }
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && modal.classList.contains("open")) {
+          closeProjectModal();
+        }
+      });
+
+      /* ---------------------------------------------------
+       * 2. 모바일 메뉴 토글 & 현재 섹션 메뉴 활성화
+       * --------------------------------------------------- */
+      const menuBtn = document.getElementById("menuBtn");
+      const navLinks = document.getElementById("navLinks");
+      const navAnchors = navLinks.querySelectorAll("a");
+
+      menuBtn.addEventListener("click", function () {
+        const isOpen = navLinks.classList.toggle("open");
+        menuBtn.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      navAnchors.forEach(function (anchor) {
+        anchor.addEventListener("click", function () {
+          navLinks.classList.remove("open");
+          menuBtn.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      const sections = document.querySelectorAll("main section[id]");
+      function updateActiveMenu() {
+        const scrollPos = window.scrollY + 130;
+        sections.forEach(function (sec) {
+          const top = sec.offsetTop;
+          const height = sec.offsetHeight;
+          const id = sec.getAttribute("id");
+          if (scrollPos >= top && scrollPos < top + height) {
+            navAnchors.forEach(function (a) {
+              a.classList.toggle("active", a.getAttribute("href") === "#" + id);
+            });
+          }
+        });
+      }
+
+      /* ---------------------------------------------------
+       * 3. 이메일 복사 기능
+       * --------------------------------------------------- */
+      const copyEmailBtn = document.getElementById("copyEmailBtn");
+      const emailText = document.getElementById("emailText");
+      const copyFeedback = document.getElementById("copyFeedback");
+
+      copyEmailBtn.addEventListener("click", function () {
+        const email = emailText.textContent.trim();
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(function () {
+            copyFeedback.textContent = "이메일 주소가 클립보드에 복사되었습니다.";
+          }).catch(function () {
+            copyFeedback.textContent = "복사에 실패했습니다. 주소를 직접 선택해 복사해 주세요.";
+          });
+        } else {
+          copyFeedback.textContent = "이메일 주소: " + email;
+        }
+      });
+
+      /* ---------------------------------------------------
+       * 4. .scene-motion 작업실 부드러운 인터랙티브 애니메이션
+       *    - 약 7초 주기로 위아래 약 10px 천천히 부유
+       *    - PC에서만 마우스를 따라 소폭 이동 및 최대 4도 기울기 제한
+       *    - 스크롤 시 위로 최대 20px 이동
+       *    - requestAnimationFrame timestamp 기반 부드러운 보간
+       *    - 모바일 터치에서는 마우스 추적 비활성화 및 영역 이탈 방지
+       *    - 움직임 멈춤 버튼 및 prefers-reduced-motion 대응
+       *    - 숨겨진 탭(visibilitychange)에서는 애니메이션 일시 정지
+       * --------------------------------------------------- */
+      const sceneEl = document.getElementById("sceneMotion");
+      const motionToggleBtn = document.getElementById("motionToggleBtn");
+      const motionStatusIcon = document.getElementById("motionStatusIcon");
+      const motionStatusText = document.getElementById("motionStatusText");
+
+      const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+      const finePointerQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
+
+      let isUserPaused = false;
+      let rafId = null;
+      let startTimestamp = null;
+      let pausedElapsed = 0;
+
+      // 목표값과 현재 보간값
+      let targetMouseX = 0;
+      let targetMouseY = 0;
+      let targetRotateX = 0;
+      let targetRotateY = 0;
+
+      let currentMouseX = 0;
+      let currentMouseY = 0;
+      let currentRotateX = 0;
+      let currentRotateY = 0;
+      let currentScrollY = 0;
+
+      function isTouchOrMobile() {
+        return !finePointerQuery.matches || "ontouchstart" in window || navigator.maxTouchPoints > 0;
+      }
+
+      function shouldAnimate() {
+        return !isUserPaused && !reducedMotionQuery.matches && !document.hidden;
+      }
+
+      function resetSceneTransform() {
+        currentMouseX = 0;
+        currentMouseY = 0;
+        currentRotateX = 0;
+        currentRotateY = 0;
+        currentScrollY = 0;
+        if (sceneEl) {
+          sceneEl.style.transform = "translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg)";
+        }
+      }
+
+      function updateToggleButtonUI() {
+        const paused = isUserPaused || reducedMotionQuery.matches;
+        motionToggleBtn.setAttribute("aria-pressed", String(paused));
+        if (paused) {
+          motionStatusIcon.textContent = "▶";
+          motionStatusText.textContent = "모션 재생";
+        } else {
+          motionStatusIcon.textContent = "⏸";
+          motionStatusText.textContent = "모션 일시정지";
+        }
+      }
+
+      function getScrollOffset() {
+        const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+        const progress = Math.min(1, Math.max(0, window.scrollY / maxScroll));
+        // 스크롤 시 위로 최대 20px 이동 (-20px)
+        return -20 * progress;
+      }
+
+      function renderFrame(timestamp) {
+        if (!shouldAnimate()) {
+          rafId = null;
+          return;
+        }
+
+        if (startTimestamp === null) {
+          startTimestamp = timestamp - pausedElapsed;
+        }
+        const elapsed = timestamp - startTimestamp;
+        pausedElapsed = elapsed;
+
+        // 1) 약 7초(7000ms) 주기로 위아래 약 10px(진폭 5px -> -5px ~ +5px, 총 10px 폭) 부유
+        const periodMs = 7000;
+        const floatY = Math.sin((elapsed / periodMs) * Math.PI * 2) * 5;
+
+        // 2) 스크롤에 따른 위로 최대 20px 이동 보간
+        const targetScrollY = getScrollOffset();
+        currentScrollY += (targetScrollY - currentScrollY) * 0.08;
+
+        // 3) PC 마우스 추적 (모바일 터치 시에는 0으로 고정)
+        if (isTouchOrMobile()) {
+          targetMouseX = 0;
+          targetMouseY = 0;
+          targetRotateX = 0;
+          targetRotateY = 0;
+        }
+
+        currentMouseX += (targetMouseX - currentMouseX) * 0.07;
+        currentMouseY += (targetMouseY - currentMouseY) * 0.07;
+        currentRotateX += (targetRotateX - currentRotateX) * 0.07;
+        currentRotateY += (targetRotateY - currentRotateY) * 0.07;
+
+        const totalX = currentMouseX;
+        const totalY = floatY + currentScrollY + currentMouseY;
+
+        sceneEl.style.transform =
+          "perspective(800px) " +
+          "translate3d(" + totalX.toFixed(2) + "px, " + totalY.toFixed(2) + "px, 0px) " +
+          "rotateX(" + currentRotateX.toFixed(2) + "deg) " +
+          "rotateY(" + currentRotateY.toFixed(2) + "deg)";
+
+        rafId = window.requestAnimationFrame(renderFrame);
+      }
+
+      function startAnimationLoop() {
+        if (rafId === null && shouldAnimate()) {
+          startTimestamp = null;
+          rafId = window.requestAnimationFrame(renderFrame);
+        }
+      }
+
+      function stopAnimationLoop(resetPosition) {
+        if (rafId !== null) {
+          window.cancelAnimationFrame(rafId);
+          rafId = null;
+        }
+        if (resetPosition) {
+          pausedElapsed = 0;
+          resetSceneTransform();
+        }
+      }
+
+      // PC 마우스 이동 이벤트 (터치 기기에서는 무시, 기울기 최대 4도 제한)
+      window.addEventListener("mousemove", function (e) {
+        if (isTouchOrMobile() || !shouldAnimate()) return;
+
+        const normX = (e.clientX / window.innerWidth) * 2 - 1;  // -1 ~ 1
+        const normY = (e.clientY / window.innerHeight) * 2 - 1; // -1 ~ 1
+
+        // 화면 밖으로 넘치지 않는 소폭 이동 (최대 ±8px)
+        targetMouseX = Math.max(-8, Math.min(8, normX * 8));
+        targetMouseY = Math.max(-6, Math.min(6, normY * 6));
+
+        // 기울기 최대 4도 제한
+        targetRotateY = Math.max(-4, Math.min(4, normX * 4));
+        targetRotateX = Math.max(-4, Math.min(4, -normY * 4));
+      }, { passive: true });
+
+      window.addEventListener("mouseleave", function () {
+        targetMouseX = 0;
+        targetMouseY = 0;
+        targetRotateX = 0;
+        targetRotateY = 0;
+      });
+
+      // 움직임 멈춤 버튼 토글
+      motionToggleBtn.addEventListener("click", function () {
+        if (reducedMotionQuery.matches && !isUserPaused) {
+          // OS에서 동작 줄이기가 켜져 있는 경우 사용자가 명시적으로 재생 허용 가능
+          isUserPaused = false;
+          updateToggleButtonUI();
+          if (rafId === null && !document.hidden) {
+            startTimestamp = null;
+            rafId = window.requestAnimationFrame(function loop(ts) {
+              if (isUserPaused || document.hidden) {
+                rafId = null;
+                return;
+              }
+              if (startTimestamp === null) startTimestamp = ts - pausedElapsed;
+              const elapsed = ts - startTimestamp;
+              pausedElapsed = elapsed;
+              const floatY = Math.sin((elapsed / 7000) * Math.PI * 2) * 5;
+              const targetScrollY = getScrollOffset();
+              currentScrollY += (targetScrollY - currentScrollY) * 0.08;
+              sceneEl.style.transform = "translate3d(0px, " + (floatY + currentScrollY).toFixed(2) + "px, 0px)";
+              rafId = window.requestAnimationFrame(loop);
+            });
+          }
+          return;
+        }
+
+        isUserPaused = !isUserPaused;
+        updateToggleButtonUI();
+
+        if (isUserPaused) {
+          stopAnimationLoop(true);
+        } else {
+          startAnimationLoop();
+        }
+      });
+
+      // OS prefers-reduced-motion 설정 감지
+      if (reducedMotionQuery.matches) {
+        isUserPaused = true;
+        resetSceneTransform();
+      }
+      updateToggleButtonUI();
+
+      reducedMotionQuery.addEventListener("change", function (e) {
+        isUserPaused = e.matches;
+        updateToggleButtonUI();
+        if (isUserPaused) {
+          stopAnimationLoop(true);
+        } else {
+          startAnimationLoop();
+        }
+      });
+
+      // 숨겨진 탭에서는 애니메이션 정지, 복귀 시 재개
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          stopAnimationLoop(false);
+        } else if (shouldAnimate()) {
+          startAnimationLoop();
+        }
+      });
+
+      // 스크롤 이벤트
+      window.addEventListener("scroll", function () {
+        updateActiveMenu();
+      }, { passive: true });
+
+      // 초기 실행
+      updateActiveMenu();
+      startAnimationLoop();
+    })();
+  </script>
+</body>
+</html>
